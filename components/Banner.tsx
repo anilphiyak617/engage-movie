@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Movie } from '../type'
-import { Button } from '@mui/material';
 import Image from 'next/image';
 import { IoIosInformationCircleOutline, IoMdPlay } from "react-icons/io"
 
