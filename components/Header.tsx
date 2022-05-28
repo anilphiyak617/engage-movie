@@ -10,7 +10,7 @@ export default function Header() {
         console.log("useEffect called");
         const handleScroll = () => {
 
-            window.scrollY > 0 ? setIsScroll(true) : setIsScroll(false);
+            window.scrollY > 50 ? setIsScroll(true) : setIsScroll(false);
         }
 
         window.addEventListener("scroll", handleScroll);
@@ -21,7 +21,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={`${isScroll && 'bg-black'}`}>
+        <header className={`${isScroll && 'bg-black'} z-20`}>
 
             <div className="flex items-center  space-x-2 md:space-x-10">
                 <img src='https://rb.gy/ulxxee' width={100} height={100} className="cursor-pointer object-contain" />
